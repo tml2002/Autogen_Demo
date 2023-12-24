@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 # 获取各个 API Key
 load_dotenv()
 config_list = config_list_from_json(env_or_file="OAI_CONFIG_LIST")
-#具体可参见第三期视频
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 serper_api_key=os.getenv("SERPER_API_KEY")
 browserless_api_key=os.getenv("BROWSERLESS_API_KEY")
